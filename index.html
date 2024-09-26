@@ -1,0 +1,161 @@
+<html>
+    <head>
+        <title>Employee details</title>
+        <style>
+            body{
+                margin-left: 250px;
+                margin-right: 250px;
+                margin-top: 40px;
+                border: solid grey 1px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            h1{
+                text-align: center;
+                margin-top: 10px;
+            }
+            form{
+                background-color: rgb(199, 234, 241);
+                border-radius: 10px;
+                padding: 20px;
+            }
+            input , select{
+                padding: 10px;
+                border-radius: 5px;
+                border: 0;
+                width: 100%;
+                margin: 10px;
+            }
+            label{
+                font-weight: bold;
+                font-size: 18px;
+                margin: 10px;
+            }
+            button{
+                background-color: blue;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                width: 100%;
+                border: none;
+                margin:10px;
+            }
+            .list{
+                margin-top: 40px;
+                background-color: rgb(216, 219, 222);
+                padding: 20px;
+                border-radius: 10px;
+                
+            }
+            a{
+                text-decoration: none;
+            }
+            
+            table {
+                border-collapse: collapse;
+                text-align: center;
+                align-items: center;
+                width: 100%;
+               
+            }
+            th, td , thead{
+                padding: 20px;
+            }
+            th{
+                color: white;
+                background-color: blue;
+            }
+            .details{
+                margin-top: 40px;
+                border: solid grey 1px;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            tr{
+                border-bottom: solid grey 1px;
+            }
+            .profile{
+            width: 50px;         
+            height: 50px;        
+            background-color: grey;
+            border-radius: 50%;
+            display: inline-block; 
+            text-align: center;   
+            line-height: 50px;    
+            margin: 0 auto; 
+            }
+        iframe{
+           width: 100%;
+           margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+    <h1>Company Directory Portal</h1>
+    <form id="registrationForm">
+        <h1>Employee Registration Form</h1>
+        <label for="name">Full Name:</label>
+        <br>
+        <input type = "text" id="name"/>
+        <br>
+        <label for="mail">Email:</label>
+        <br>
+        <input type="text" id="mail"/>
+        <br>
+        <label for="dept">Department:</label>
+        <br>
+        <select>
+            <option>IT</option>
+            <option>HR</option>
+            <option>Finance</option>
+            <option>Marketing</option>
+        </select>
+        <br>
+        <label for="id">Employee ID:</label>
+        <br>
+        <input type="text" id="id"/>
+        <br>
+         <label for="profileUrl">Profile Picture URL:</label>
+         <br>
+         <input type="text" id="profileUrl"/>
+         <br>
+         <button>Register Employee</button>
+    </form>
+    <div class="list">
+    <h1>Employee List</h1>
+    <ol>
+      <li><a href="#registrationForm">John Doe - john@example.com</a></li>
+      <hr/>
+      <li><a href="#registrationForm">Jane Smith - jane@example.com</a></li>
+      <hr/>
+    </ol>
+   </div>
+   <div class="details">
+        <h1>Employee Details</h1>
+        <table>
+            <thead>
+                <th>Name</th>
+                <th>Employee ID</th>
+                <th>Department</th>
+                <th>Profile Picture</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>12345</td>
+                    <td>IT</td>
+                    <td><div class="profile"></div></td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>67890</td>
+                    <td>HR</td>
+                    <td><div class="profile"></div></td>
+                </tr>
+            </tbody>
+        </table>
+   </div>
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.1985006906993!2d78.38741457462936!3d17.498035299609196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91f3fdf6bde9%3A0x752db86a6ab3be2a!2sInnomatics%20Research%20Labs!5e0!3m2!1sen!2sin!4v1727354778149!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+</body>
+</html>
